@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B9896A1595DCDBB50018D18 /* Pods_Pretium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CD56C8FD421DDEBB582AC0 /* Pods_Pretium.framework */; };
+		0F35BF1F9DEAE5FCBCA614B2 /* Pods_PretiumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654A87C2F7F9DBCCE9285DEE /* Pods_PretiumUITests.framework */; };
+		1411A4D822D2505900707D8E /* MapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4D722D2505900707D8E /* MapboxNavigation.framework */; };
+		1411A4DA22D2507000707D8E /* MapboxCoreNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4D922D2507000707D8E /* MapboxCoreNavigation.framework */; };
+		1411A4DC22D2507600707D8E /* MapboxDirections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4DB22D2507600707D8E /* MapboxDirections.framework */; };
+		1411A4DE22D2507A00707D8E /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4DD22D2507A00707D8E /* MapboxMobileEvents.framework */; };
+		1411A4E022D2508000707D8E /* MapboxSpeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4DF22D2508000707D8E /* MapboxSpeech.framework */; };
+		1411A4E222D2508400707D8E /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E122D2508400707D8E /* Polyline.framework */; };
+		1411A4E422D2508800707D8E /* Solar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E322D2508800707D8E /* Solar.framework */; };
+		1411A4E622D2508B00707D8E /* Turf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E522D2508B00707D8E /* Turf.framework */; };
+		1411A4E822D250C200707D8E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E722D250C200707D8E /* Alamofire.framework */; };
+		1411A4EA22D250C700707D8E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E922D250C700707D8E /* FBSDKCoreKit.framework */; };
+		1411A4EC22D250CC00707D8E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4EB22D250CC00707D8E /* FBSDKLoginKit.framework */; };
+		1411A4EE22D250CF00707D8E /* Pods_PretiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4ED22D250CF00707D8E /* Pods_PretiumTests.framework */; };
+		1411A4F022D250D200707D8E /* VK_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4EF22D250D200707D8E /* VK_ios_sdk.framework */; };
+		1411A4F222D250D600707D8E /* Pods_PretiumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4F122D250D600707D8E /* Pods_PretiumUITests.framework */; };
+		14243148224E96380067BEEA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14243147224E96380067BEEA /* SignInViewController.swift */; };
+		1438B96E223F837400EBFBC1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438B96D223F837400EBFBC1 /* UserModel.swift */; };
+		1461C3A322B16B1D003886A9 /* InitiialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3A222B16B1D003886A9 /* InitiialViewController.swift */; };
+		1461C3A522B16B55003886A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3A422B16B55003886A9 /* WelcomeViewController.swift */; };
+		1461C3A622B16B55003886A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3A422B16B55003886A9 /* WelcomeViewController.swift */; };
+		1461C3A722B16B55003886A9 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3A422B16B55003886A9 /* WelcomeViewController.swift */; };
+		1461C3AD22B9980C003886A9 /* PresentationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3AC22B9980C003886A9 /* PresentationPageViewController.swift */; };
+		1461C3AE22B9980C003886A9 /* PresentationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3AC22B9980C003886A9 /* PresentationPageViewController.swift */; };
+		1461C3AF22B9980C003886A9 /* PresentationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3AC22B9980C003886A9 /* PresentationPageViewController.swift */; };
+		1461C3B122BB77FC003886A9 /* FirstSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B022BB77FC003886A9 /* FirstSlideViewController.swift */; };
+		1461C3B222BB77FC003886A9 /* FirstSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B022BB77FC003886A9 /* FirstSlideViewController.swift */; };
+		1461C3B322BB77FC003886A9 /* FirstSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B022BB77FC003886A9 /* FirstSlideViewController.swift */; };
+		1461C3B622BB7849003886A9 /* SecondSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B522BB7849003886A9 /* SecondSlideViewController.swift */; };
+		1461C3B722BB7849003886A9 /* SecondSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B522BB7849003886A9 /* SecondSlideViewController.swift */; };
+		1461C3B822BB7849003886A9 /* SecondSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B522BB7849003886A9 /* SecondSlideViewController.swift */; };
+		1461C3BA22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B922BB785C003886A9 /* ThirdSlideViewController.swift */; };
+		1461C3BB22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B922BB785C003886A9 /* ThirdSlideViewController.swift */; };
+		1461C3BC22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3B922BB785C003886A9 /* ThirdSlideViewController.swift */; };
+		1461C3BE22BF6007003886A9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */; };
+		1461C3BF22BF6007003886A9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */; };
+		1461C3C022BF6007003886A9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */; };
+		1461C3C222C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */; };
+		1461C3C322C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */; };
+		1461C3C422C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */; };
+		147089AF2229C65800B896FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147089AE2229C65800B896FB /* AppDelegate.swift */; };
+		147089B42229C65800B896FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147089B22229C65800B896FB /* Main.storyboard */; };
+		147089B72229C65800B896FB /* Pretium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 147089B52229C65800B896FB /* Pretium.xcdatamodeld */; };
+		147089B92229C65800B896FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147089B82229C65800B896FB /* Assets.xcassets */; };
+		147089BC2229C65800B896FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147089BA2229C65800B896FB /* LaunchScreen.storyboard */; };
+		147089C72229C65800B896FB /* PretiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147089C62229C65800B896FB /* PretiumTests.swift */; };
+		147089D22229C65800B896FB /* PretiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147089D12229C65800B896FB /* PretiumUITests.swift */; };
+		14E55E6D224FA2A100E7D004 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E55E6C224FA2A100E7D004 /* SignUpViewController.swift */; };
+		14F53BA4222C0E4E00E25A43 /* GlobalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F53BA3222C0E4E00E25A43 /* GlobalServices.swift */; };
+		14FEF5DC2290287D00914204 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FEF5DB2290287D00914204 /* MapViewController.swift */; };
+		656FF84780509040E92287C6 /* Pods_PretiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24F8026DA3AC4759E07437 /* Pods_PretiumTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		147089C32229C65800B896FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147089A32229C65700B896FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147089AA2229C65700B896FB;
+			remoteInfo = Pretium;
+		};
+		147089CE2229C65800B896FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147089A32229C65700B896FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 147089AA2229C65700B896FB;
+			remoteInfo = Pretium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02366B1D126854FE26977EB2 /* Pods-Pretium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretium.debug.xcconfig"; path = "Target Support Files/Pods-Pretium/Pods-Pretium.debug.xcconfig"; sourceTree = "<group>"; };
+		1411A4D722D2505900707D8E /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4D922D2507000707D8E /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxCoreNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4DB22D2507600707D8E /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4DD22D2507A00707D8E /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4DF22D2508000707D8E /* MapboxSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MapboxSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4E122D2508400707D8E /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4E322D2508800707D8E /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4E522D2508B00707D8E /* Turf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Turf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4E722D250C200707D8E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4E922D250C700707D8E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4EB22D250CC00707D8E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4ED22D250CF00707D8E /* Pods_PretiumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PretiumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4EF22D250D200707D8E /* VK_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VK_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1411A4F122D250D600707D8E /* Pods_PretiumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PretiumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14243147224E96380067BEEA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		1438B96D223F837400EBFBC1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1461C3A222B16B1D003886A9 /* InitiialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiialViewController.swift; sourceTree = "<group>"; };
+		1461C3A422B16B55003886A9 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		1461C3AC22B9980C003886A9 /* PresentationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationPageViewController.swift; sourceTree = "<group>"; };
+		1461C3B022BB77FC003886A9 /* FirstSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSlideViewController.swift; sourceTree = "<group>"; };
+		1461C3B522BB7849003886A9 /* SecondSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSlideViewController.swift; sourceTree = "<group>"; };
+		1461C3B922BB785C003886A9 /* ThirdSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSlideViewController.swift; sourceTree = "<group>"; };
+		1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkRegistrationViewController.swift; sourceTree = "<group>"; };
+		147089AB2229C65800B896FB /* Pretium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pretium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		147089AE2229C65800B896FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		147089B32229C65800B896FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		147089B62229C65800B896FB /* Pretium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pretium.xcdatamodel; sourceTree = "<group>"; };
+		147089B82229C65800B896FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		147089BB2229C65800B896FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		147089BD2229C65800B896FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147089C22229C65800B896FB /* PretiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PretiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		147089C62229C65800B896FB /* PretiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretiumTests.swift; sourceTree = "<group>"; };
+		147089C82229C65800B896FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147089CD2229C65800B896FB /* PretiumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PretiumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		147089D12229C65800B896FB /* PretiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretiumUITests.swift; sourceTree = "<group>"; };
+		147089D32229C65800B896FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E55E6C224FA2A100E7D004 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		14F53BA3222C0E4E00E25A43 /* GlobalServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalServices.swift; sourceTree = "<group>"; };
+		14FEF5DB2290287D00914204 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1A8C2B0C4C79E03E8B4B3893 /* Pods-Pretium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretium.release.xcconfig"; path = "Target Support Files/Pods-Pretium/Pods-Pretium.release.xcconfig"; sourceTree = "<group>"; };
+		2B7401A7AC29C361D8DB4BB9 /* Pods-PretiumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PretiumTests.release.xcconfig"; path = "Target Support Files/Pods-PretiumTests/Pods-PretiumTests.release.xcconfig"; sourceTree = "<group>"; };
+		654A87C2F7F9DBCCE9285DEE /* Pods_PretiumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PretiumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B98132750C5995C150A6341 /* Pods-PretiumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PretiumTests.debug.xcconfig"; path = "Target Support Files/Pods-PretiumTests/Pods-PretiumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79D282B1DBA8A0870A4061CD /* Pods-PretiumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PretiumUITests.debug.xcconfig"; path = "Target Support Files/Pods-PretiumUITests/Pods-PretiumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A183DB1E34B3FAEBA6CAF588 /* Pods-PretiumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PretiumUITests.release.xcconfig"; path = "Target Support Files/Pods-PretiumUITests/Pods-PretiumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A79A14B28CFB0552F7052569DC3633C9 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		C58D5BEF88B40D72B46F9BD3B8840991 /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
+		CEB2C506A5B2621EC0E76C23C0610ACD /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
+		D1CD56C8FD421DDEBB582AC0 /* Pods_Pretium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD24F8026DA3AC4759E07437 /* Pods_PretiumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PretiumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		147089A82229C65700B896FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1411A4F222D250D600707D8E /* Pods_PretiumUITests.framework in Frameworks */,
+				1411A4F022D250D200707D8E /* VK_ios_sdk.framework in Frameworks */,
+				1411A4EE22D250CF00707D8E /* Pods_PretiumTests.framework in Frameworks */,
+				1411A4EC22D250CC00707D8E /* FBSDKLoginKit.framework in Frameworks */,
+				1411A4EA22D250C700707D8E /* FBSDKCoreKit.framework in Frameworks */,
+				1411A4E822D250C200707D8E /* Alamofire.framework in Frameworks */,
+				1411A4E622D2508B00707D8E /* Turf.framework in Frameworks */,
+				1411A4E422D2508800707D8E /* Solar.framework in Frameworks */,
+				1411A4E222D2508400707D8E /* Polyline.framework in Frameworks */,
+				1411A4E022D2508000707D8E /* MapboxSpeech.framework in Frameworks */,
+				1411A4DE22D2507A00707D8E /* MapboxMobileEvents.framework in Frameworks */,
+				1411A4DC22D2507600707D8E /* MapboxDirections.framework in Frameworks */,
+				1411A4DA22D2507000707D8E /* MapboxCoreNavigation.framework in Frameworks */,
+				1411A4D822D2505900707D8E /* MapboxNavigation.framework in Frameworks */,
+				0B9896A1595DCDBB50018D18 /* Pods_Pretium.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147089BF2229C65800B896FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656FF84780509040E92287C6 /* Pods_PretiumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147089CA2229C65800B896FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F35BF1F9DEAE5FCBCA614B2 /* Pods_PretiumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1438B96C223EA9FD00EBFBC1 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				CEB2C506A5B2621EC0E76C23C0610ACD /* SCSDKLoginKit.framework */,
+				A79A14B28CFB0552F7052569DC3633C9 /* SCSDKCoreKit.framework */,
+				C58D5BEF88B40D72B46F9BD3B8840991 /* SCSDKBitmojiKit.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		1438B96F223F838300EBFBC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1438B96D223F837400EBFBC1 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1461C3B422BB7815003886A9 /* PresentationSlides */ = {
+			isa = PBXGroup;
+			children = (
+				1461C3AC22B9980C003886A9 /* PresentationPageViewController.swift */,
+				1461C3B022BB77FC003886A9 /* FirstSlideViewController.swift */,
+				1461C3B522BB7849003886A9 /* SecondSlideViewController.swift */,
+				1461C3B922BB785C003886A9 /* ThirdSlideViewController.swift */,
+			);
+			path = PresentationSlides;
+			sourceTree = "<group>";
+		};
+		147089A22229C65700B896FB = {
+			isa = PBXGroup;
+			children = (
+				147089AD2229C65800B896FB /* Pretium */,
+				147089C52229C65800B896FB /* PretiumTests */,
+				147089D02229C65800B896FB /* PretiumUITests */,
+				147089AC2229C65800B896FB /* Products */,
+				6EEEBA6E90230B87299F95A4 /* Pods */,
+				F1F06FBEA124698DC3F0BA53 /* Frameworks */,
+				1438B96C223EA9FD00EBFBC1 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		147089AC2229C65800B896FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147089AB2229C65800B896FB /* Pretium.app */,
+				147089C22229C65800B896FB /* PretiumTests.xctest */,
+				147089CD2229C65800B896FB /* PretiumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		147089AD2229C65800B896FB /* Pretium */ = {
+			isa = PBXGroup;
+			children = (
+				1438B96F223F838300EBFBC1 /* Models */,
+				147089AE2229C65800B896FB /* AppDelegate.swift */,
+				14F53BA3222C0E4E00E25A43 /* GlobalServices.swift */,
+				1461C3A222B16B1D003886A9 /* InitiialViewController.swift */,
+				1461C3B422BB7815003886A9 /* PresentationSlides */,
+				14243147224E96380067BEEA /* SignInViewController.swift */,
+				1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */,
+				14E55E6C224FA2A100E7D004 /* SignUpViewController.swift */,
+				1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */,
+				1461C3A422B16B55003886A9 /* WelcomeViewController.swift */,
+				14FEF5DB2290287D00914204 /* MapViewController.swift */,
+				147089B22229C65800B896FB /* Main.storyboard */,
+				147089B82229C65800B896FB /* Assets.xcassets */,
+				147089BA2229C65800B896FB /* LaunchScreen.storyboard */,
+				147089BD2229C65800B896FB /* Info.plist */,
+				147089B52229C65800B896FB /* Pretium.xcdatamodeld */,
+			);
+			path = Pretium;
+			sourceTree = "<group>";
+		};
+		147089C52229C65800B896FB /* PretiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				147089C62229C65800B896FB /* PretiumTests.swift */,
+				147089C82229C65800B896FB /* Info.plist */,
+			);
+			path = PretiumTests;
+			sourceTree = "<group>";
+		};
+		147089D02229C65800B896FB /* PretiumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				147089D12229C65800B896FB /* PretiumUITests.swift */,
+				147089D32229C65800B896FB /* Info.plist */,
+			);
+			path = PretiumUITests;
+			sourceTree = "<group>";
+		};
+		6EEEBA6E90230B87299F95A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02366B1D126854FE26977EB2 /* Pods-Pretium.debug.xcconfig */,
+				1A8C2B0C4C79E03E8B4B3893 /* Pods-Pretium.release.xcconfig */,
+				6B98132750C5995C150A6341 /* Pods-PretiumTests.debug.xcconfig */,
+				2B7401A7AC29C361D8DB4BB9 /* Pods-PretiumTests.release.xcconfig */,
+				79D282B1DBA8A0870A4061CD /* Pods-PretiumUITests.debug.xcconfig */,
+				A183DB1E34B3FAEBA6CAF588 /* Pods-PretiumUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1F06FBEA124698DC3F0BA53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1411A4F122D250D600707D8E /* Pods_PretiumUITests.framework */,
+				1411A4EF22D250D200707D8E /* VK_ios_sdk.framework */,
+				1411A4ED22D250CF00707D8E /* Pods_PretiumTests.framework */,
+				1411A4EB22D250CC00707D8E /* FBSDKLoginKit.framework */,
+				1411A4E922D250C700707D8E /* FBSDKCoreKit.framework */,
+				1411A4E722D250C200707D8E /* Alamofire.framework */,
+				1411A4E522D2508B00707D8E /* Turf.framework */,
+				1411A4E322D2508800707D8E /* Solar.framework */,
+				1411A4E122D2508400707D8E /* Polyline.framework */,
+				1411A4DF22D2508000707D8E /* MapboxSpeech.framework */,
+				1411A4DD22D2507A00707D8E /* MapboxMobileEvents.framework */,
+				1411A4DB22D2507600707D8E /* MapboxDirections.framework */,
+				1411A4D922D2507000707D8E /* MapboxCoreNavigation.framework */,
+				1411A4D722D2505900707D8E /* MapboxNavigation.framework */,
+				D1CD56C8FD421DDEBB582AC0 /* Pods_Pretium.framework */,
+				FD24F8026DA3AC4759E07437 /* Pods_PretiumTests.framework */,
+				654A87C2F7F9DBCCE9285DEE /* Pods_PretiumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		147089AA2229C65700B896FB /* Pretium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147089D62229C65800B896FB /* Build configuration list for PBXNativeTarget "Pretium" */;
+			buildPhases = (
+				9B0829F39ED1B010EE2C4590 /* [CP] Check Pods Manifest.lock */,
+				147089A72229C65700B896FB /* Sources */,
+				147089A82229C65700B896FB /* Frameworks */,
+				147089A92229C65700B896FB /* Resources */,
+				92D3756F9475DF54FE5D7D0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pretium;
+			productName = Pretium;
+			productReference = 147089AB2229C65800B896FB /* Pretium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		147089C12229C65800B896FB /* PretiumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147089D92229C65800B896FB /* Build configuration list for PBXNativeTarget "PretiumTests" */;
+			buildPhases = (
+				6DA2D916AE9DE03249958B89 /* [CP] Check Pods Manifest.lock */,
+				147089BE2229C65800B896FB /* Sources */,
+				147089BF2229C65800B896FB /* Frameworks */,
+				147089C02229C65800B896FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147089C42229C65800B896FB /* PBXTargetDependency */,
+			);
+			name = PretiumTests;
+			productName = PretiumTests;
+			productReference = 147089C22229C65800B896FB /* PretiumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		147089CC2229C65800B896FB /* PretiumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147089DC2229C65800B896FB /* Build configuration list for PBXNativeTarget "PretiumUITests" */;
+			buildPhases = (
+				4B14ED9FB7D264B29E2F2A12 /* [CP] Check Pods Manifest.lock */,
+				147089C92229C65800B896FB /* Sources */,
+				147089CA2229C65800B896FB /* Frameworks */,
+				147089CB2229C65800B896FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				147089CF2229C65800B896FB /* PBXTargetDependency */,
+			);
+			name = PretiumUITests;
+			productName = PretiumUITests;
+			productReference = 147089CD2229C65800B896FB /* PretiumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		147089A32229C65700B896FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alexey Zelentsov";
+				TargetAttributes = {
+					147089AA2229C65700B896FB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					147089C12229C65800B896FB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 147089AA2229C65700B896FB;
+					};
+					147089CC2229C65800B896FB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 147089AA2229C65700B896FB;
+					};
+				};
+			};
+			buildConfigurationList = 147089A62229C65700B896FB /* Build configuration list for PBXProject "Pretium" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 147089A22229C65700B896FB;
+			productRefGroup = 147089AC2229C65800B896FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				147089AA2229C65700B896FB /* Pretium */,
+				147089C12229C65800B896FB /* PretiumTests */,
+				147089CC2229C65800B896FB /* PretiumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		147089A92229C65700B896FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				147089BC2229C65800B896FB /* LaunchScreen.storyboard in Resources */,
+				147089B92229C65800B896FB /* Assets.xcassets in Resources */,
+				147089B42229C65800B896FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147089C02229C65800B896FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147089CB2229C65800B896FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B14ED9FB7D264B29E2F2A12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PretiumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA2D916AE9DE03249958B89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PretiumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D3756F9475DF54FE5D7D0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pretium/Pods-Pretium-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxCoreNavigation/MapboxCoreNavigation.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxNavigation/MapboxNavigation.framework",
+				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework",
+				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MapboxSpeech/MapboxSpeech.framework",
+				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
+				"${BUILT_PRODUCTS_DIR}/Solar/Solar.framework",
+				"${BUILT_PRODUCTS_DIR}/Turf/Turf.framework",
+				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxCoreNavigation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxDirections.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigationNative.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/MapboxNavigationNative.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxSpeech.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Solar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pretium/Pods-Pretium-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B0829F39ED1B010EE2C4590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pretium-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		147089A72229C65700B896FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461C3A522B16B55003886A9 /* WelcomeViewController.swift in Sources */,
+				14F53BA4222C0E4E00E25A43 /* GlobalServices.swift in Sources */,
+				1461C3B622BB7849003886A9 /* SecondSlideViewController.swift in Sources */,
+				1461C3A322B16B1D003886A9 /* InitiialViewController.swift in Sources */,
+				1438B96E223F837400EBFBC1 /* UserModel.swift in Sources */,
+				1461C3B122BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				14243148224E96380067BEEA /* SignInViewController.swift in Sources */,
+				1461C3BA22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
+				1461C3C222C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */,
+				1461C3BE22BF6007003886A9 /* ForgotPasswordViewController.swift in Sources */,
+				14FEF5DC2290287D00914204 /* MapViewController.swift in Sources */,
+				147089AF2229C65800B896FB /* AppDelegate.swift in Sources */,
+				14E55E6D224FA2A100E7D004 /* SignUpViewController.swift in Sources */,
+				147089B72229C65800B896FB /* Pretium.xcdatamodeld in Sources */,
+				1461C3AD22B9980C003886A9 /* PresentationPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147089BE2229C65800B896FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461C3C322C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */,
+				1461C3B722BB7849003886A9 /* SecondSlideViewController.swift in Sources */,
+				1461C3BF22BF6007003886A9 /* ForgotPasswordViewController.swift in Sources */,
+				1461C3AE22B9980C003886A9 /* PresentationPageViewController.swift in Sources */,
+				1461C3BB22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
+				1461C3B222BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				147089C72229C65800B896FB /* PretiumTests.swift in Sources */,
+				1461C3A622B16B55003886A9 /* WelcomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		147089C92229C65800B896FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1461C3C422C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */,
+				1461C3B822BB7849003886A9 /* SecondSlideViewController.swift in Sources */,
+				1461C3C022BF6007003886A9 /* ForgotPasswordViewController.swift in Sources */,
+				1461C3AF22B9980C003886A9 /* PresentationPageViewController.swift in Sources */,
+				1461C3BC22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
+				1461C3B322BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				147089D22229C65800B896FB /* PretiumUITests.swift in Sources */,
+				1461C3A722B16B55003886A9 /* WelcomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		147089C42229C65800B896FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147089AA2229C65700B896FB /* Pretium */;
+			targetProxy = 147089C32229C65800B896FB /* PBXContainerItemProxy */;
+		};
+		147089CF2229C65800B896FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 147089AA2229C65700B896FB /* Pretium */;
+			targetProxy = 147089CE2229C65800B896FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		147089B22229C65800B896FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147089B32229C65800B896FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		147089BA2229C65800B896FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				147089BB2229C65800B896FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		147089D42229C65800B896FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		147089D52229C65800B896FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		147089D72229C65800B896FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02366B1D126854FE26977EB2 /* Pods-Pretium.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+				);
+				INFOPLIST_FILE = Pretium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = migras.Pretium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		147089D82229C65800B896FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8C2B0C4C79E03E8B4B3893 /* Pods-Pretium.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/SnapSDK",
+				);
+				INFOPLIST_FILE = Pretium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = migras.Pretium;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		147089DA2229C65800B896FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B98132750C5995C150A6341 /* Pods-PretiumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PretiumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pretium.PretiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pretium.app/Pretium";
+			};
+			name = Debug;
+		};
+		147089DB2229C65800B896FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B7401A7AC29C361D8DB4BB9 /* Pods-PretiumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PretiumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pretium.PretiumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pretium.app/Pretium";
+			};
+			name = Release;
+		};
+		147089DD2229C65800B896FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D282B1DBA8A0870A4061CD /* Pods-PretiumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PretiumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pretium.PretiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pretium;
+			};
+			name = Debug;
+		};
+		147089DE2229C65800B896FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A183DB1E34B3FAEBA6CAF588 /* Pods-PretiumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PretiumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pretium.PretiumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pretium;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		147089A62229C65700B896FB /* Build configuration list for PBXProject "Pretium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147089D42229C65800B896FB /* Debug */,
+				147089D52229C65800B896FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147089D62229C65800B896FB /* Build configuration list for PBXNativeTarget "Pretium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147089D72229C65800B896FB /* Debug */,
+				147089D82229C65800B896FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147089D92229C65800B896FB /* Build configuration list for PBXNativeTarget "PretiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147089DA2229C65800B896FB /* Debug */,
+				147089DB2229C65800B896FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		147089DC2229C65800B896FB /* Build configuration list for PBXNativeTarget "PretiumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147089DD2229C65800B896FB /* Debug */,
+				147089DE2229C65800B896FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		147089B52229C65800B896FB /* Pretium.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				147089B62229C65800B896FB /* Pretium.xcdatamodel */,
+			);
+			currentVersion = 147089B62229C65800B896FB /* Pretium.xcdatamodel */;
+			path = Pretium.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 147089A32229C65700B896FB /* Project object */;
+}
