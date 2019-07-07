@@ -20,9 +20,7 @@
 		1411A4E822D250C200707D8E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E722D250C200707D8E /* Alamofire.framework */; };
 		1411A4EA22D250C700707D8E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4E922D250C700707D8E /* FBSDKCoreKit.framework */; };
 		1411A4EC22D250CC00707D8E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4EB22D250CC00707D8E /* FBSDKLoginKit.framework */; };
-		1411A4EE22D250CF00707D8E /* Pods_PretiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4ED22D250CF00707D8E /* Pods_PretiumTests.framework */; };
 		1411A4F022D250D200707D8E /* VK_ios_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4EF22D250D200707D8E /* VK_ios_sdk.framework */; };
-		1411A4F222D250D600707D8E /* Pods_PretiumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411A4F122D250D600707D8E /* Pods_PretiumUITests.framework */; };
 		14243148224E96380067BEEA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14243147224E96380067BEEA /* SignInViewController.swift */; };
 		1438B96E223F837400EBFBC1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438B96D223F837400EBFBC1 /* UserModel.swift */; };
 		1461C3A322B16B1D003886A9 /* InitiialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3A222B16B1D003886A9 /* InitiialViewController.swift */; };
@@ -90,9 +88,7 @@
 		1411A4E722D250C200707D8E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411A4E922D250C700707D8E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411A4EB22D250CC00707D8E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1411A4ED22D250CF00707D8E /* Pods_PretiumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PretiumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1411A4EF22D250D200707D8E /* VK_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VK_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1411A4F122D250D600707D8E /* Pods_PretiumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PretiumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14243147224E96380067BEEA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1438B96D223F837400EBFBC1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1461C3A222B16B1D003886A9 /* InitiialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiialViewController.swift; sourceTree = "<group>"; };
@@ -137,9 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1411A4F222D250D600707D8E /* Pods_PretiumUITests.framework in Frameworks */,
 				1411A4F022D250D200707D8E /* VK_ios_sdk.framework in Frameworks */,
-				1411A4EE22D250CF00707D8E /* Pods_PretiumTests.framework in Frameworks */,
 				1411A4EC22D250CC00707D8E /* FBSDKLoginKit.framework in Frameworks */,
 				1411A4EA22D250C700707D8E /* FBSDKCoreKit.framework in Frameworks */,
 				1411A4E822D250C200707D8E /* Alamofire.framework in Frameworks */,
@@ -283,9 +277,7 @@
 		F1F06FBEA124698DC3F0BA53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1411A4F122D250D600707D8E /* Pods_PretiumUITests.framework */,
 				1411A4EF22D250D200707D8E /* VK_ios_sdk.framework */,
-				1411A4ED22D250CF00707D8E /* Pods_PretiumTests.framework */,
 				1411A4EB22D250CC00707D8E /* FBSDKLoginKit.framework */,
 				1411A4E922D250C700707D8E /* FBSDKCoreKit.framework */,
 				1411A4E722D250C200707D8E /* Alamofire.framework */,
@@ -485,46 +477,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Pretium/Pods-Pretium-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/MapboxCoreNavigation/MapboxCoreNavigation.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxDirections.swift/MapboxDirections.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
-				"${BUILT_PRODUCTS_DIR}/MapboxNavigation/MapboxNavigation.framework",
-				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework",
-				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/MapboxSpeech/MapboxSpeech.framework",
-				"${BUILT_PRODUCTS_DIR}/Polyline/Polyline.framework",
-				"${BUILT_PRODUCTS_DIR}/Solar/Solar.framework",
-				"${BUILT_PRODUCTS_DIR}/Turf/Turf.framework",
-				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Pretium/Pods-Pretium-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxCoreNavigation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxDirections.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigationNative.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/MapboxNavigationNative.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxSpeech.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Polyline.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Solar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Turf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Pretium/Pods-Pretium-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
