@@ -18,7 +18,7 @@ class InitiialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       print("applicationstop")
+        
     }
     
     
