@@ -16,7 +16,6 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         if let user = User.current {
             let mas = user.fullname.components(separatedBy: " ")
             welcomeLbl.text = "Welcome, \(mas[0])"
