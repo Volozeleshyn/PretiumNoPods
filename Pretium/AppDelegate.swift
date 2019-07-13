@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Code that we will need in later, but it works accidentally
-        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let def = UserDefaults.standard
         
@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             self.window?.rootViewController = controller
             self.window?.makeKeyAndVisible()
-        }*/
+        }
         
         return true
     }
