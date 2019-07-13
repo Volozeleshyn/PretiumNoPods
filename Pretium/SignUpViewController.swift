@@ -122,6 +122,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                         def.setValue(User.current!.email, forKey: "UserEmail")
                         def.setValue(User.current!.id, forKey: "UserId")
                         def.setValue(User.current!.imageURL, forKey: "UserImageURL")
+                        def.setValue(User.current!.metersWalked, forKey: "UserMetersWalked")
+                        def.setValue(User.current!.adsPrefered, forKey: "UserAdsPrefered")
                         self.fullNameTxtField.text = ""
                         self.userNameTxtField.text = ""
                         self.emailTxtField.text = ""

@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let id = def.value(forKey: "UserId") as? String {//Check if user already authorized
             
-         User.current = User(id: id, username: def.string(forKey: "UserUsername")!, fullname: def.string(forKey: "UserFullname")!, email: def.string(forKey: "UserEmail")!, imageURL: def.string(forKey: "UserImageURL")!)
+         User.current = User(id: id, username: def.string(forKey: "UserUsername")!, fullname: def.string(forKey: "UserFullname")!, email: def.string(forKey: "UserEmail")!, imageURL: def.string(forKey: "UserImageURL")!, metersWalked: def.integer(forKey: "UserMetersWalked"), adsPrefered: def.float(forKey: "UserAdsPrefered"))
             
             /* UserService.observeUserProfile(user!.uid, completion: { (userPr) in
              UserService.currentUser = userPr

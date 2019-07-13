@@ -24,10 +24,8 @@ class ProfileViewController: UIViewController {
         
         self.nameLabel.text = User.current!.fullname
         
-        print("USER: \(User.current!.imageURL)")
         
         guard let url = URL(string: User.current!.imageURL) else {return}
-        print(url)
         do {
             let data = try Data(contentsOf: url)
             if let image = UIImage(data: data) {

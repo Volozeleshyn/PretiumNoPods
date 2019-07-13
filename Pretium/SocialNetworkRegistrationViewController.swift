@@ -49,6 +49,8 @@ class SocialNetworkRegistrationViewController: UIViewController, UITextFieldDele
                         def.setValue(User.current!.email, forKey: "UserEmail")
                         def.setValue(User.current!.id, forKey: "UserId")
                         def.setValue(User.current!.imageURL, forKey: "UserImageURL")
+                        def.setValue(User.current!.metersWalked, forKey: "UserMetersWalked")
+                        def.setValue(User.current!.adsPrefered, forKey: "UserAdsPrefered")
                         self.usernameTF.text = ""
                         self.view.endEditing(false)
                         self.performSegue(withIdentifier: "snRegRight", sender: self)//Move to the next view
