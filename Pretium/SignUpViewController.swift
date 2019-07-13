@@ -116,6 +116,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                     do {
                         
                         User.current = try JSONDecoder().decode(User.self, from: data) // decode data that we got from the server into an instance of a user, and put it in current user
+                        let def = UserDefaults.standard
+                        def.setValue(User.current!.username, forKey: "UserUsername")
+                        def.setValue(User.current!.fullname, forKey: "UserFullname")
+                        def.setValue(User.current!.email, forKey: "UserEmail")
+                        def.setValue(User.current!.id, forKey: "UserId")
+                        def.setValue(User.current!.imageURL, forKey: "UserImageURL")
                         self.fullNameTxtField.text = ""
                         self.userNameTxtField.text = ""
                         self.emailTxtField.text = ""

@@ -12,6 +12,7 @@ import Foundation
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLbl: UILabel!
+    @IBOutlet weak var btnNext: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,5 +25,8 @@ class WelcomeViewController: UIViewController {
     
 
    
-
+    @IBAction func btnNextTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "temporary", sender: self)
+    }
+    
 }

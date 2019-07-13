@@ -16,12 +16,12 @@ class SocialNetworkRegistrationViewController: UIViewController, UITextFieldDele
 
     
     @IBOutlet weak var usernameTF: UITextField!
-    @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var btnNext: UIButton!
     
     var fullname : String = ""
     var email : String?
     var id : String = ""
+    var imageURL : String = ""
     
     
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class SocialNetworkRegistrationViewController: UIViewController, UITextFieldDele
     private func passSocialNetworkData(username: String, nilEmail : Bool) {
         var e : String = self.email ?? ""
         if nilEmail {e = ""}
-        let params = ["username" : username, "email" : e, "id" : self.id, "fullname" : self.fullname] as Parameters
+        let params = ["username" : username, "email" : e, "id" : self.id, "fullname" : self.fullname, "imageURL" : self.imageURL] as Parameters
         let apiHost = GlobalServices.API_HOST
         Alamofire.request(apiHost+"/get_sn_data", method: .post, parameters: params).responseData { (response) in
             switch response.result {
@@ -43,6 +43,12 @@ class SocialNetworkRegistrationViewController: UIViewController, UITextFieldDele
                 case 200:
                     do {
                     User.current = try JSONDecoder().decode(User.self, from: data) // decode data that we got from the server into an instance of a user, and put it in current user
+                        let def = UserDefaults.standard
+                        def.setValue(User.current!.username, forKey: "UserUsername")
+                        def.setValue(User.current!.fullname, forKey: "UserFullname")
+                        def.setValue(User.current!.email, forKey: "UserEmail")
+                        def.setValue(User.current!.id, forKey: "UserId")
+                        def.setValue(User.current!.imageURL, forKey: "UserImageURL")
                         self.usernameTF.text = ""
                         self.view.endEditing(false)
                         self.performSegue(withIdentifier: "snRegRight", sender: self)//Move to the next view
@@ -117,8 +123,8 @@ class SocialNetworkRegistrationViewController: UIViewController, UITextFieldDele
 
     private func configureViews() {
         self.usernameTF.delegate = self
-        self.passwordTF.delegate = self
     }
+    
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

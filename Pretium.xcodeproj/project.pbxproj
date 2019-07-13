@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,6 +45,9 @@
 		1461C3C222C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */; };
 		1461C3C322C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */; };
 		1461C3C422C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */; };
+		146D708622D95C8900405678 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D708522D95C8900405678 /* ProfileViewController.swift */; };
+		146D708722D95C8900405678 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D708522D95C8900405678 /* ProfileViewController.swift */; };
+		146D708822D95C8900405678 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D708522D95C8900405678 /* ProfileViewController.swift */; };
 		147089AF2229C65800B896FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147089AE2229C65800B896FB /* AppDelegate.swift */; };
 		147089B42229C65800B896FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147089B22229C65800B896FB /* Main.storyboard */; };
 		147089B72229C65800B896FB /* Pretium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 147089B52229C65800B896FB /* Pretium.xcdatamodeld */; };
@@ -99,6 +102,7 @@
 		1461C3B922BB785C003886A9 /* ThirdSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSlideViewController.swift; sourceTree = "<group>"; };
 		1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		1461C3C122C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkRegistrationViewController.swift; sourceTree = "<group>"; };
+		146D708522D95C8900405678 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		147089AB2229C65800B896FB /* Pretium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pretium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147089AE2229C65800B896FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		147089B32229C65800B896FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 				1461C3BD22BF6007003886A9 /* ForgotPasswordViewController.swift */,
 				1461C3A422B16B55003886A9 /* WelcomeViewController.swift */,
 				14FEF5DB2290287D00914204 /* MapViewController.swift */,
+				146D708522D95C8900405678 /* ProfileViewController.swift */,
 				147089B22229C65800B896FB /* Main.storyboard */,
 				147089B82229C65800B896FB /* Assets.xcassets */,
 				147089BA2229C65800B896FB /* LaunchScreen.storyboard */,
@@ -523,6 +528,7 @@
 				1461C3A322B16B1D003886A9 /* InitiialViewController.swift in Sources */,
 				1438B96E223F837400EBFBC1 /* UserModel.swift in Sources */,
 				1461C3B122BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				146D708622D95C8900405678 /* ProfileViewController.swift in Sources */,
 				14243148224E96380067BEEA /* SignInViewController.swift in Sources */,
 				1461C3BA22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
 				1461C3C222C6F77A003886A9 /* SocialNetworkRegistrationViewController.swift in Sources */,
@@ -545,6 +551,7 @@
 				1461C3AE22B9980C003886A9 /* PresentationPageViewController.swift in Sources */,
 				1461C3BB22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
 				1461C3B222BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				146D708722D95C8900405678 /* ProfileViewController.swift in Sources */,
 				147089C72229C65800B896FB /* PretiumTests.swift in Sources */,
 				1461C3A622B16B55003886A9 /* WelcomeViewController.swift in Sources */,
 			);
@@ -560,6 +567,7 @@
 				1461C3AF22B9980C003886A9 /* PresentationPageViewController.swift in Sources */,
 				1461C3BC22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
 				1461C3B322BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				146D708822D95C8900405678 /* ProfileViewController.swift in Sources */,
 				147089D22229C65800B896FB /* PretiumUITests.swift in Sources */,
 				1461C3A722B16B55003886A9 /* WelcomeViewController.swift in Sources */,
 			);

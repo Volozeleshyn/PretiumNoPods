@@ -14,4 +14,5 @@ struct User : Codable { // Codable because we need to encode and decode our user
     var username : String
     var fullname : String
     var email : String
+    var imageURL : String
 }

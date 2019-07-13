@@ -35,6 +35,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
     var fullname : String = ""
     var email : String?
     var id : String = ""
+    var imageURL : String = ""
     var vkShouldGo = false
     var fbShouldGo = false
     
@@ -79,6 +80,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
             vc.fullname = self.fullname
             vc.email = self.email
             vc.id = self.id
+            vc.imageURL = self.imageURL
         }
     }
     
@@ -193,6 +195,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
             def.setValue(User.current!.fullname, forKey: "UserFullname")
             def.setValue(User.current!.email, forKey: "UserEmail")
             def.setValue(User.current!.id, forKey: "UserId")
+            def.setValue(User.current!.imageURL, forKey: "UserImageURL")
             self.emailTF.text = "" //make empty texts of emailTF and passwordTF
             self.passwordTF.text = ""
             self.view.endEditing(false)
@@ -218,16 +221,20 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
                 //Cancel
             } else {
                 let accessT = AccessToken.current!
-                let req = GraphRequest(graphPath: "me", parameters: ["fields": "name,email"], tokenString: accessT.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
+                let req = GraphRequest(graphPath: "me", parameters: ["fields": "name,email,picture.width(480).height(480)"], tokenString: accessT.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
                 req.start(completionHandler: { (connection, result, error) in
                     if error == nil {
                         if let res = result as? [String : Any] {
+                            print("RES: \(res)")
                            self.email = res["email"] as? String
                            if let fullname = res["name"] as? String,
                               let id = res["id"] as? String {
                                 self.fullname = fullname
                                 self.id = "fb"+id
-                                //self.fbShouldGo = true
+                                if let imageURL = ((res["picture"] as? [String: Any])?["data"] as? [String: Any])?["url"] as? String {
+                                    print("imageURL: \(imageURL)")
+                                    self.imageURL = imageURL
+                                }
                                 self.perform(#selector(self.callAnotherFunc), with: nil, afterDelay: 0.5)
                                 self.checkForId(id: self.id)
                             }
@@ -240,13 +247,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
                 })
             }
         }
-         
     }
     
     
     @objc func callAnotherFunc() { 
         self.checkForId(id: self.id)
-        
     }
     
     
@@ -292,7 +297,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
     
     // Func, that tolds the server that the user has forgotten password
     private func forgotPassword() {
-       
+       self.performSegue(withIdentifier: "signInToForgotPassword", sender: self)
     }
     
     
@@ -311,12 +316,15 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
     
     //Func passes VKToken in GlobalServices or shows alert
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
-        if (result?.token != nil) {
+      /*  if (result?.token != nil) {
             self.email = result!.token?.email
             self.id = "vk"+result!.token.userId
-            let req = VKRequest(method: "account.getProfileInfo", parameters: nil)
+            let req = VKRequest(method: "account.getProfileInfo", parameters: nil/*["fields" : "photo_50"]*/)
             req?.execute(resultBlock: { (response) in
                 if let dict = response?.json as? [String : Any] {
+                    print("DICT: \(dict)")
+                    //guard let imageUrl = dict["photo_50"] as? String else {GlobalServices.showAlert(where: self, withTitle: "Ooops!", andMessage: "Cannot convert data from VK"); return}
+                    //print("IMAGEURL: \(imageUrl)")
                     guard let first = dict["first_name"] as? String else {GlobalServices.showAlert(where: self, withTitle: "Ooops!", andMessage: "Cannot convert data from VK"); return}
                     guard let second = dict["last_name"] as? String else {GlobalServices.showAlert(where: self, withTitle: "Ooops!", andMessage: "Cannot convert data from VK"); return}
                     self.fullname = first+" "+second
@@ -328,6 +336,9 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
             //Segue to the next view
         } else if result.error != nil {
             GlobalServices.showAlert(where: self, withTitle: "Ooops!", andMessage: result.error.localizedDescription)
+        } */
+        if result.token == nil {
+            GlobalServices.showAlert(where: self, withTitle: "Ooops!", andMessage: "Something wrong with VK")
         }
         
     }
@@ -338,7 +349,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
     }
     
     func vkSdkAuthorizationStateUpdated(with result: VKAuthorizationResult!) {
-        //xz
+        if result.token != nil {
+            self.email = result.token.email
+            self.id = result.token.userId
+            self.fullname = result.token.localUser.first_name+" "+result.token.localUser.last_name
+            self.imageURL = result.token.localUser.photo_100
+            self.vkShouldGo = true
+        }
     }
     
     func vkSdkDidDismiss(_ controller: UIViewController!) {
@@ -408,7 +425,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, VKSdkDelegate
     
     //Login with Facebook
     @IBAction func btnFBTapped(_ sender: UIButton) {
-        self.loginWithFacebook(readPermissions: ["public_profile", "email", "user_friends", "user_photos", "user_location"])
+        self.loginWithFacebook(readPermissions: ["public_profile", "email", "user_friends", "user_location", "user_photos"])
     }
     
     //Login  with VK
