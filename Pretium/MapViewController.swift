@@ -71,27 +71,59 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let styleURL = URL(string: "mapbox://styles/vsevolodpretium/cjxjaz06d0ec61cn5byc8ugn8")
+        mapView.styleURL = styleURL
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.delegate = self
         
         mapView.showsUserLocation = true
         mapView.setUserTrackingMode(.follow, animated: true)
-       
-        self.addButton()
         
-        //Kremlin
+        self.addButton()
+        var CustomPoints = [CustomAnnotation]()
+        /* var coordinates = [
+         CLLocationCoordinate2D(latitude:55.751694 , longitude:37.617218 ),
+         CLLocationCoordinate2D(latitude:55.759818678875895 , longitude: 37.61922597885132),
+         CLLocationCoordinate2D(latitude: 55.75935636382997, longitude: 37.620404630943085)
+         ]
+         var titles = [
+         "Kremlin",
+         "Tsum",
+         "The Bolshoi Theatre"
+         ]
+         var subtitles = [
+         "Sight",
+         "Shop",
+         "Theatre"
+         ]
+         */
+        
         let center = CLLocationCoordinate2D(latitude: 55.751694, longitude: 37.617218)
         
         mapView.setCenter(center, zoomLevel: 7, direction: 0, animated: false)
+        let kremlin = CustomAnnotation(coordinate: CLLocationCoordinate2D(latitude:55.751694 , longitude:37.617218 ), title: "Kremlin", subtitle: "Sight")
+        let tsum = CustomAnnotation(coordinate: CLLocationCoordinate2D(latitude:55.759818678875895 , longitude: 37.61922597885132), title: "Tsum", subtitle: "Shop")
+        let bolsoi = CustomAnnotation(coordinate: CLLocationCoordinate2D(latitude: 55.75935636382997, longitude: 37.620404630943085), title: "The Bolshoi Theatre", subtitle: "Theatre")
         
-        let hello = MGLPointAnnotation()
-        hello.coordinate = CLLocationCoordinate2D(latitude: 55.751694, longitude: 37.617218)
-        hello.title = "Hello world!"
-        hello.subtitle = "Pretium"
+        CustomPoints.append(kremlin)
+        CustomPoints.append(tsum)
+        CustomPoints.append(bolsoi)
         
-        mapView.addAnnotation(hello)
+        mapView.addAnnotations(CustomPoints as [MGLAnnotation])
         
+        
+        //Kremlin
+        /* let center = CLLocationCoordinate2D(latitude: 55.751694, longitude: 37.617218)
+         
+         mapView.setCenter(center, zoomLevel: 7, direction: 0, animated: false)
+         
+         let hello = MGLPointAnnotation()
+         hello.coordinate = CLLocationCoordinate2D(latitude: 55.751694, longitude: 37.617218)
+         hello.title = "Hello world!"
+         hello.subtitle = "Pretium"
+         
+         mapView.addAnnotation(hello)
+         */
         
         
     }
@@ -141,5 +173,5 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         return true
     }
     
-
+    
 }

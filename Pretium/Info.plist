@@ -93,7 +93,7 @@
 		</dict>
 	</dict>
 	<key>MGLMapboxAccessToken</key>
-	<string>pk.eyJ1IjoieWFrb3ZicmlsbCIsImEiOiJjanJiM3E2Nm8wdzF5M3luMGJpY3g2czQzIn0.F2761AU_uQ88iskJAK3RAQ</string>
+	<string>pk.eyJ1IjoidnNldm9sb2RwcmV0aXVtIiwiYSI6ImNqdjg1Ymc5YjBibDY0NnBmZDBiejhmdGcifQ.EvYvwKbjvlbJGl7pItBIuQ</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
 </dict>

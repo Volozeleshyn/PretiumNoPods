@@ -59,6 +59,7 @@
 		14F53BA4222C0E4E00E25A43 /* GlobalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F53BA3222C0E4E00E25A43 /* GlobalServices.swift */; };
 		14FEF5DC2290287D00914204 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FEF5DB2290287D00914204 /* MapViewController.swift */; };
 		656FF84780509040E92287C6 /* Pods_PretiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD24F8026DA3AC4759E07437 /* Pods_PretiumTests.framework */; };
+		B7F9797522DB785700C65841 /* CustomAnnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F9797422DB785700C65841 /* CustomAnnotationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		79D282B1DBA8A0870A4061CD /* Pods-PretiumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PretiumUITests.debug.xcconfig"; path = "Target Support Files/Pods-PretiumUITests/Pods-PretiumUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A183DB1E34B3FAEBA6CAF588 /* Pods-PretiumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PretiumUITests.release.xcconfig"; path = "Target Support Files/Pods-PretiumUITests/Pods-PretiumUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A79A14B28CFB0552F7052569DC3633C9 /* SCSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKCoreKit.framework; sourceTree = "<group>"; };
+		B7F9797422DB785700C65841 /* CustomAnnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationModel.swift; sourceTree = "<group>"; };
 		C58D5BEF88B40D72B46F9BD3B8840991 /* SCSDKBitmojiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKBitmojiKit.framework; sourceTree = "<group>"; };
 		CEB2C506A5B2621EC0E76C23C0610ACD /* SCSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SCSDKLoginKit.framework; sourceTree = "<group>"; };
 		D1CD56C8FD421DDEBB582AC0 /* Pods_Pretium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 		1438B96F223F838300EBFBC1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B7F9797422DB785700C65841 /* CustomAnnotationModel.swift */,
 				1438B96D223F837400EBFBC1 /* UserModel.swift */,
 			);
 			path = Models;
@@ -528,6 +531,7 @@
 				1461C3A322B16B1D003886A9 /* InitiialViewController.swift in Sources */,
 				1438B96E223F837400EBFBC1 /* UserModel.swift in Sources */,
 				1461C3B122BB77FC003886A9 /* FirstSlideViewController.swift in Sources */,
+				B7F9797522DB785700C65841 /* CustomAnnotationModel.swift in Sources */,
 				146D708622D95C8900405678 /* ProfileViewController.swift in Sources */,
 				14243148224E96380067BEEA /* SignInViewController.swift in Sources */,
 				1461C3BA22BB785C003886A9 /* ThirdSlideViewController.swift in Sources */,
