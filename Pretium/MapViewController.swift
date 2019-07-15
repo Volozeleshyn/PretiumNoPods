@@ -161,13 +161,16 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         mapView.setCamera(camera, withDuration: 5, animationTimingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
     }
+    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+        return nil
+    }
     
-    func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
+   /* func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
         guard let image = UIImage(named: "Fb") else {return MGLAnnotationImage()}
         
         let ret = MGLAnnotationImage(image: image, reuseIdentifier: "Fb")
         return ret
-    }
+    }*/
     
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
