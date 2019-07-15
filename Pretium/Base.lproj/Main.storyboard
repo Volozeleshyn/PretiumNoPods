@@ -97,6 +97,14 @@
                                     <action selector="buttonTermsOfUseTapped:" destination="SJs-oM-CxV" eventType="touchUpInside" id="tKd-m2-3Uc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYL-DR-VVO">
+                                <rect key="frame" x="53" y="492" width="46" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="bAm-wf-4L4" kind="show" id="eT6-9f-eOB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="24I-sV-hWB"/>
@@ -683,6 +691,7 @@
         <image name="vk" width="75" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WZ2-76-70s"/>
+        <segue reference="eT6-9f-eOB"/>
+        <segue reference="zAC-nV-cdg"/>
     </inferredMetricsTieBreakers>
 </document>

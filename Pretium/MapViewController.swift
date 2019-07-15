@@ -171,6 +171,19 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         let ret = MGLAnnotationImage(image: image, reuseIdentifier: "Fb")
         return ret
     }*/
+    func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
+        return UIButton(type: .detailDisclosure)
+    }
+    func mapView(_ mapView: MGLMapView, annotation: MGLAnnotation, calloutAccessoryControlTapped control: UIControl) {
+        // Hide the callout view.
+        mapView.deselectAnnotation(annotation, animated: false)
+        
+        // Show an alert containing the annotation's details
+        let alert = UIAlertController(title: annotation.title!!, message: "The complex now serves as the official residence of the President of the Russian Federation and as a museum with 2,746,405 visitors in 2017.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
     
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
